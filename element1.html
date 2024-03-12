@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .video video{
+            position: absolute;
+            height: 400px;
+            width:400px;  
+            z-index: auto;
+        }
+        .video .image img{
+            position: relative;
+            width: 400px;
+            height: 400px;
+            /* z-index: 1; */
+        }
+        /* .video video:hover{
+
+            z-index: 2;
+        } */
+        .video .image img:hover{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="video">
+        <video src="images/accessories-video.mp4" autoplay loop muted></video>
+        <div class="image">
+            <img src="images/accessories-image.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

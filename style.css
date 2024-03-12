@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    /* justify-content:center ; */
+
+}
+.flex1{
+    display: flex;
+    justify-content: center;
+}
+
+/* nav-bar  */
+header{
+    width:100%;
+    height:60px;
+    /* background-color: bisque; */
+    box-sizing: border-box;
+}
+.top{
+    height:60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    /* background-color: aquamarine; */
+}
+.top .logo{
+    text-align: start;
+    width: 170px;
+    /* border:1px solid red ; */
+    height:60px;
+    padding-left: 10px;
+    color:orange;
+    padding-top: 15px;
+    margin-right: 10px;
+}
+.top .categories{
+    padding-top: 18px;
+    padding-left: 30px;
+    /* border:1px solid red ; */
+    width:130px;
+    height: 50px;
+}
+.categories .text i{
+    margin-right: 20px;
+    /* height: 50px; */
+}
+.categories .text{
+    text-decoration: none;
+    color: black;
+    /* padding-right: 50px; */
+}
+.top .categories p i{
+    margin-right: 5px;
+}
+.search{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.search-bar{
+    /* width: 100%; */
+    width: 800px;
+    height: 40px;
+    /* background-color:gold; */
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    /* margin-top: 10px; */
+}
+.search-bar input{
+    background: transparent;
+    flex:1;
+    border: 0;
+    outline: none;
+    /* padding: 24px 20px; */
+    font-size: 18px;
+    color: #cac7ff;
+    margin-left: 10px;
+}
+.search-bar button img{
+    width:20px;
+}
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height:30px;
+    background: #9b7858;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.top .icon{
+    /* border: 2px solid black; */
+    gap: 50px;
+    margin-left: 40px;
+    padding: 18px 10px;
+}
+.icon .image1{
+    width: 30px;
+    height: 30px;
+}
+.icon .image2{
+    width: 30px;
+    height: 30px;
+}
+.icon .text{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    width:70px;
+}
+
+/* information  */
+.information .green-part{
+    width:100%;
+    height: 160px;
+    background-color: #ed8333;
+    margin-top: 20px;
+}
+/* .information .green-part .heading{
+    margin-top: 10px;
+} */
+.information .green-part .heading h2{
+    color: white;
+    font-size: 35px;
+    font-weight: 100;
+    text-align: center;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    padding-top: 15px;
+}
+.information .circles{
+    width: 100%;
+    height: auto;
+    /* background-color: #9b7858; */
+    /* border: 2px solid black; */
+    margin-top: 10px;
+    gap:60px;
+    padding-top: 30px;
+}
+.circle{
+    height: 130px;
+    width: 130px;
+    background-color: #cac7ff;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.circles .circle1{
+    background-image: url('images/personalize-gift.jpg');
+}
+.circles .circle2{
+    background-image: url('images/art.jpg');
+}
+.circles .circle3{
+    background-image: url('images/electronics.jpg');
+}
+.circles .circle4{
+    background-image: url('images/stationary.jpg');
+}
+.circles .circle5{
+    background-image: url('images/jewelery.jpg');
+}
+.circles .circle6{
+    background-image: url('images/sale.jpg');
+}
+/* .image1 .caption1{
+    height:100px;
+    width:50px;
+} */
+.c1{
+    text-align: center;
+    padding-top: 10px;
+}
+/* hover effect  */
+.image:hover{
+    transform: scale(1.1);
+    /* zoom: 1.1; */
+    border-bottom: 2px solid black;
+    /* padding-top: 30px; */
+}
+
+/* shop by category  */
+.category{
+    margin-top: 150px;
+}
+.category .heading{
+    text-align: center;
+}
+.category .heading h2{
+    font-size: 30px;
+}
+/* .card{
+    background-color: rgb(239, 139, 10);
+    opacity: 0.6;
+}  */
+.cards{
+    display: grid;
+    grid-template-columns: 386px 386px 386px;
+    grid-template-rows: 300px 300px;
+    justify-content: center;
+    gap:20px;
+    padding-top: 60px;
+}
+.category .cards .card{
+    text-decoration: none;
+    color: black;
+}
+.cards .card .first-half{
+    height: 80%;
+    width: 386px;
+    background-color: #9b7858;
+    backdrop-filter: blur(20px);
+}
+.cards .card .second-half{
+    height: 20%;
+    width: 386px;
+    /* margin-top: 80%; */
+}
+.cards .card .s1{
+    background-color: rgb(222, 184, 135,0.6);
+    border: 4px solid rgb(222, 184, 135);
+}
+.cards .card .s2{
+    background-color: rgb(255, 192, 203,0.6);
+    border:4px solid rgb(255, 192, 203);
+}
+.cards .card .s3{
+    background-color: rgb(128, 128, 128,0.6);
+    border: 4px solid rgb(128, 128, 128);
+}
+.cards .card .s4{
+    background-color:rgb(155, 120, 88,0.6);
+    border:4px solid #9b7858 ;
+}
+.cards .card .s5{
+    background-color: rgb(17, 136, 112,0.6);
+    border: 4px solid rgb(17, 136, 112);
+}
+.cards .card .s6{
+    background-color: rgb(179, 158, 115,0.6);
+    border: 4px solid rgb(179, 158, 115);
+}
+.cards .card .first-half video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* position:absolute; */
+    z-index: auto; 
+    /* cursor: pointer; */
+}
+.cards .card .first-half .image img{
+    width: 386px;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+}
+.cards .card .second-half{
+    text-align: center;
+    padding-top: 20px;
+}
+.second-half .line hr{
+    height: 3px;
+    background-color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+/* occassions  */
+.occasion{
+    /* height: 1600px; */
+    width: 100%;
+}
+.occasion .heading1{
+    margin-top: 80px;
+    text-align: center;
+    color: rgb(82, 75, 75);
+}
+.occasion .quarter{
+    margin-top: 60px;
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 740px 740px;
+    border: 2px solid black;
+}
+.occasion .quarter .s .s1{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:740px;
+}
+.occasion .quarter .s{
+    position: relative;
+}
+.occasion .quarter .s .s1{
+    height: 300px;
+    width: 740px;
+    position: absolute;
+}
+.occasion .quarter .section1 .img{
+    background-image: url('images/birthday.jpg');
+    /* filter: grayscale(45%);  */
+    /* opacity: 0.7; */
+} 
+.occasion .quarter .s .dull{
+    background-color: black;
+    position: absolute;
+    height: 300px;
+    width: 740px;
+    opacity: 0.3;
+}
+.occasion .quarter .s:hover .overlay {
+    height: 300px;
+    width: 740px;
+    background-color: rgb(202, 199, 255,0.4);
+    position: absolute;
+    transition: 0.5s;
+}
+.occasion .quarter .s .text{
+    z-index: 3;
+    position: relative;
+    text-align: center;
+    padding-top: 120px;
+}
+.occasion .quarter .s .text h1{
+    color: white;
+    /* background-color: transparent; */
+}
+.occasion .quarter .s .text button{
+    margin-top: 20px;
+    height: 60px;
+    width: 150px;
+}
+.occasion .quarter .section2 .img1{
+    background-image: url('images/appreciation1.jpg');
+}
+.occasion .quarter .section3 .img2{
+    background-image: url('images/graduation.jpg');
+}
+.occasion .quarter .section4 .img3{
+    background-image: url('images/holidays.jpeg');
+}
+/* trending products */
+.trending{
+    /* background-color: aqua; */
+    margin-top:100px;
+    text-align: center;
+}
+.trending .menu{
+    padding-top: 40px;
+    gap: 20px;
+}
+.trending .menu .m{
+    height:400px;
+    width:300px;
+    /* background-color: #9b7858; */
+    border: 0.3px solid black;
+    border-radius: 25px;
+}
+.trending .menu .m p{
+    color: grey;
+}
+.trending .menu .m img{
+    width: 299px;
+    height: 70%;
+    border-radius: 25px 25px 0px 0px;
+}
+.trending .menu .m .image{
+    width:120px;
+    height: 20px;
+    margin-top: 5px;
+}
+.trending .menu .m .rate{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: black;
+}
+.trending .menu .m:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(0.95);
+}
+
+/* best way to make some one happy */
+.happy .box-image{
+    margin-top: 110px;
+    position: relative;
+}
+.happy .box-image img{
+    width: 100%;
+    position: absolute;
+}
+.happy .box-image .quotation{
+    position: relative;
+    z-index: 1;
+    height: 400px;
+    width: 550px;
+    padding-top: 100px;
+    padding-left: 150px;
+}
+.happy .box-image .quotation h1{
+    color: aliceblue;
+    font-size: 55px;
+}
+.happy .box-image .quotation p{
+    color: aliceblue;
+    font-size: 18px;
+    margin-top: 40px;
+}
+.happy .box-image .quotation button{
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    margin-top: 40px;
+    background-color: rgb(70, 76, 146);
+    color: aliceblue;
+}
+
+/* footer  */
+.footer{
+    margin-top:200px;
+    margin-left:100px;
+    display: flex;    
+    gap: 80px;
+}
+.footer .flogo{
+    margin-top: 10px;
+}
+.footer .flogo .logo-image{
+    height: 200px;
+    width: 200px;
+}
+footer .flist1 ul .items{
+    color: rgb(42, 49, 138);
+    list-style: none;
+    font-size:large;
+    
+}
+ul{
+    line-height: 28px;
+}
+footer .flist2{
+    margin-left:200px;
+}
+footer .flist2 ul .items1{
+    color: rgb(42, 49, 138);
+    list-style: none;
+    font-size:large;
+}
+.signing .quotes{
+    margin-left:200px;
+    color: rgb(56, 56, 58);
+    font-size:x-large;
+}
+.form{
+    margin-left:200px;
+    margin-top:30px;
+}
+.in1{
+    height: 7vh;
+    width:300px;
+}
+.in1::placeholder{
+    font-size: large;
+    padding-left: 30px;
+}
+.btn{
+    margin-top:30px;
+    height:6.5vh;
+    width:130px;
+    font-size:13px;
+    background-color: rgb(70, 76, 146);
+    color: azure;
+}
+.footer .flist1 .items:hover{
+    color: #ed8333;
+    transition: 2s;
+}
+.footer .flist2 .items1:hover{
+    color: #ed8333;
+    transition: 2s;
+}
+
+/* extra */
+.extra{
+    height:100px;
+}
+
